@@ -7,6 +7,26 @@ Independently written implementation. MIT licensed.
 
 ## Install and use
 
+With [Vercel's skills CLI](https://github.com/vercel-labs/skills)
+(Node.js 22.20+), run from your target project:
+
+```sh
+npx skills add yuu-biz/x-post-read
+```
+
+Choose your agent, or select Claude Code and Codex explicitly without prompts:
+
+```sh
+npx skills add yuu-biz/x-post-read --skill x-post-read -a claude-code -a codex -y
+```
+
+Installation is project-local by default; optionally add `-g` / `--global`
+for a personal installation across projects. Use `--list` to preview discovery.
+The root `SKILL.md` and bundled Python script install directly from GitHub;
+this repository does not need an npm package. Python is still required to read posts.
+
+Alternatively, install with Git:
+
 Clone into **one** of these directories; run from the project where you want the skill.
 Do not overwrite an existing installation.
 
